@@ -22,3 +22,5 @@ cleaned_data <- counties_income |>
 
 # Writing a csv to a path
 write.csv(cleaned_data, here("output/state_incomes.csv"))
+
+# Happy coding!
