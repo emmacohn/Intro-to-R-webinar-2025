@@ -1,7 +1,6 @@
 # Loading a library 
 library(tidyverse)
 library(here)
-library(openxlsx2)
 
 # Storing values in a variable
 random_variable <- c(1, 3, 5, 7, 9) 
