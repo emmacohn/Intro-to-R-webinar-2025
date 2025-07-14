@@ -16,7 +16,7 @@ ranked_income <- mutate(counties_income, rank = rank(-pci))
 # Executing a multi-line command using pipes 
 cleaned_data <- counties_income |>
     filter(statefips == c(36, 6, 37)) |>
-    summarize(inc_mean = mean(household_income), 
+    summarise(inc_mean = mean(household_income), 
               n = n(), .by = states)
 
 # Writing a csv to a path
