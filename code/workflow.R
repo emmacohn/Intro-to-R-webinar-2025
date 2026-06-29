@@ -1,13 +1,20 @@
 # Loading a library 
+install.packages('tidyverse')
+remotes::install_github("Economic/earndws")
+
 library(tidyverse)
+library(earndws)
 
 # Importing a csv 
 counties_income <- read.csv("./input/counties_per_capita_income.csv")
 
 # Executing line by line commands 
 print(counties_income)
+
 count(counties_income, states)
+
 summary(counties_income)
+
 summarize(counties_income, 
   inc_median = median(household_income), 
   n=n(), 
