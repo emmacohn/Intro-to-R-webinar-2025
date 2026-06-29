@@ -5,6 +5,8 @@ remotes::install_github("Economic/earndws")
 library(tidyverse)
 library(earndws)
 
+setup_workshop("intro-to-r")
+
 # Importing a csv 
 counties_income <- read.csv("./input/counties_per_capita_income.csv")
 
